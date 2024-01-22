@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bebdi Baccha Page</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #ffc0cb; /* Pinkish background */
+      }
+
+      #bebdiButton {
+        font-size: 1.5em;
+        padding: 15px 30px;
+        border: none;
+        background: linear-gradient(45deg, #ff66b2, #ff3366);
+        color: #ffffff;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      #bebdiButton:hover {
+        transform: scale(1.1);
+      }
+
+      #poem-container {
+        text-align: center;
+        display: none;
+        margin-top: 20px;
+        font-family: "Arial", sans-serif;
+      }
+
+      #poem-container p {
+        font-size: 1.2em;
+        color: #333;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1.5;
+      }
+
+      audio {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="bebdiButton" onclick="showPoemAndSong()">Bebdi Baccha</button>
+
+    <div id="poem-container">
+      <p>
+        <b>You're the one for me.</b><br /><br />
+        <i
+          >Your eyes are like fire on a cold winter's day<br />
+          Your soul burns within me</i
+        ><br /><br />
+        <i
+          >Your touch blossoms my innermost passions<br />
+          And your voice melts my heart.</i
+        ><br /><br />
+        <b>You're the one for me.</b><br /><br />
+        <i
+          >You are the key to unlocking<br />
+          My most sacred fantasies.</i
+        ><br /><br />
+        <b>You're the one for me,</b><br />
+        <i
+          >The one that wakens me<br />
+          When I'm at my deepest sleep</i
+        ><br />
+        <i
+          >With your passionate ways,<br />
+          The one that rivets me with<br />
+          Your beautiful, unique face.</i
+        ><br /><br />
+        <b>You're the one for me.</b><br /><br />
+        <i
+          >You are the one that I want to share<br />
+          My life, my love with for all eternity.<br />
+          I will love you always and forever.</i
+        ><br /><br />
+        <b>You're the one for me.</b>
+      </p>
+      <audio controls>
+        <source src="bebdi.mp3" type="audio/mp3" />
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+
+    <script>
+      function showPoemAndSong() {
+        var poemContainer = document.getElementById("poem-container");
+        var bebdiButton = document.getElementById("bebdiButton");
+
+        // Show the poem container
+        poemContainer.style.display = "block";
+
+        // Hide the button
+        bebdiButton.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
